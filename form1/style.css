@@ -123,6 +123,15 @@ fieldset legend {
     text-transform: uppercase;
 }
 
+.col-1 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-1 div {
+    width: 300px;
+}
+
 input:invalid{
     border: 1px solid red;;
 }
