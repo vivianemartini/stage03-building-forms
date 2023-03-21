@@ -128,7 +128,6 @@ fieldset legend {
     margin-bottom: 8px;
 }
 
-
 #event-email {
     width: 622px;
 }
@@ -164,7 +163,6 @@ fieldset legend {
 
     text-transform: none;
 }
-
 
 .input-wrapper label span {
     margin-left: 12px;
@@ -254,4 +252,82 @@ button {
 
 button:hover {
     background-color:#f52b53;
+}
+
+@media (max-width: 768px) {
+    .page {
+        width: 550px;
+        overflow-x: hidden;
+    }
+    header p {
+        text-align: center;
+    }
+    .fielset-wrapper .box {
+        width: 550px;
+    }
+    form {
+        width: 550px;
+    }
+    #event-email {
+        width: 429px;
+    }    
+    .select {
+        width: 246px;
+    }
+    .checkbox-wrapper label {
+        gap: 14px
+    }
+    .checkbox-wrapper label::before {
+        width: 50px;
+    }
+    .col-1 div {
+        width: 200px;
+    }
+    .col-3 > div:nth-child(1) {
+        width: 165px;
+    }
+    .col-2 > div {
+        width: 120px;
+    }
+    button{
+        width: 445px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .page {
+        width: 350px;
+        overflow-x: hidden;
+    }
+    form {
+        width: 350px;
+    }
+    .fielset-wrapper .box {
+        width: 350px;
+    }    
+    #event-email {
+        width: 236px;
+    }   
+    .input-wrapper textarea {
+        width: 250px;
+    }
+    .col-1 {
+        flex-direction: column;
+    }
+    .col-1 div {
+        width: 230px;
+    }
+    .col-3 {
+        flex-direction: column;
+    }
+    .col-3 > div:nth-child(1) {
+        width: 180px;
+    }
+    .col-2 > div {
+        width: 120px;
+    }
+    button{
+        width: 245px;
+    }
 }
