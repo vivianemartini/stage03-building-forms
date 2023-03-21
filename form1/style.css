@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #E5E5E5;;
+    background-color: #E5E5E5;
 }
 
 body::before {
@@ -133,7 +133,7 @@ fieldset legend {
 }
 
 input:invalid{
-    border: 1px solid red;;
+    border: 1px solid red;
 }
 
 .col-3 {
@@ -184,4 +184,62 @@ button {
 
 button:hover {
     background-color:#f52b53; ;
+}
+
+
+@media (max-width: 768px) {
+    .page {
+        width: 550px;
+        overflow-x: hidden;
+    }
+    form {
+        width: 550px;
+    }
+    .col-1 div {
+        width: 200px;
+    }
+    .col-3 > div:nth-child(1) {
+        width: 180px;
+    }
+    .col-2 > div {
+        width: 120px;
+    }
+    footer {
+        width: 550px;
+    }
+    button{
+        width: 490px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .page {
+        width: 350px;
+        overflow-x: hidden;
+    }
+    form {
+        width: 350px;
+    }
+    .col-1 {
+        flex-direction: column;
+    }
+    .col-1 div {
+        width: 230px;
+    }
+    .col-3 {
+        flex-direction: column;
+    }
+    .col-3 > div:nth-child(1) {
+        width: 180px;
+    }
+    .col-2 > div {
+        width: 120px;
+    }
+    footer {
+        width: 350px;
+    }
+    button{
+        width: 290px;
+    }
 }
